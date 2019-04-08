@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+	<meta content="text/html; charset=utf-8" />
+	<title>DESARROLLO BASADO EN PLATAFORMAS</title>
+	<meta name="generator" content="Geany 1.32" />
 </head>
-
 <body>
-Content of the document......
+	<script  language=JavaScript> 
+		function go(){
+			if (document.form.login.value=='USER' && document.form.password.value=='PASSWORD'){ 
+					document.form.submit(); 
+				} 
+				else{ 
+					 alert("OH SNAP! TRY AGAIN"); 
+				} 
+			}
+	</script>
+	<div>
+		<center><b>MyCHAT</b></center>
+	</div>
+	<form name=form action="index.html">
+		<p>USER:    <input type=text name=login> 
+		<p>PASSWORD: <input type=password name=password> 
+		<input onclick=go() type=button value=Login>
+	</form>
 </body>
 
 </html>
